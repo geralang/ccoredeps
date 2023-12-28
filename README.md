@@ -18,4 +18,4 @@ Gera expects `gera.h` and `geracoredeps.h` to be provided in the exact same form
 
 `geratypes.h` may be modified, but `GeraFreeHandler`, `GeraAllocation`, `GeraArray`, `GeraString`, `gfloat`, `gint` and `gbool` are all expected to be defined in the exact same way they are defined here.
 
-`geracoredeps.c` has to exist in the `src`-directory to be included in the compilation by default by `gerap`.
+`geracoredeps.c` has to exist at the directory root to be included in the compilation by default by `gerap`.
