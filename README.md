@@ -8,7 +8,9 @@ This repository is cloned by default by `gerap` when compiling for the C target 
 
 ## Links
 
-
+- [Gera compiler](https://github.com/typesafeschwalbe/gerac)
+- [Package manager](https://github.com/typesafeschwalbe/gerap)
+- [Standard library](https://github.com/typesafeschwalbe/gerastd)
 
 ## Expectations by Gera
 
