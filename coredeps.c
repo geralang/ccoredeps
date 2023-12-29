@@ -71,8 +71,8 @@ void geracoredeps_free(void* ptr) {
 #endif
 
 
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 #include <errno.h>
 #include <locale.h>
 
