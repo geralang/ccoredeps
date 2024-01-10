@@ -1,4 +1,9 @@
-# The Gera core dependencies for the C target
+<img src="logo.png" height="200" align="left"/>
+
+# `geraccoredeps`
+*The default implementation of the core dependencies of the C target for the Gera programming language.*
+
+<br><br>
 
 This repository contains an implementation of all headers and functions that the C target of the Gera programming language needs.
 
