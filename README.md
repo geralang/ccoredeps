@@ -1,21 +1,15 @@
 <img src="logo.png" height="200" align="left"/>
 
-# `geraccoredeps`
-*The default implementation of the core dependencies of the C target for the Gera programming language.*
+# `ccoredeps`
+*The default implementation of the core dependencies of the C target for [the Gera programming language](https://github.com/geralang).*
 
-<br><br>
+<br><br><br>
 
-This repository contains an implementation of all headers and functions that the C target of the Gera programming language needs.
+The Gera programming language depends on a couple of functions when compiling to C, such as memory allocation functions, console output or mutexes. This repository implements this set of functions using libc.
 
-This implementation depends on libc, meaning if you plan on compiling to a target which does not support libc, you will need to implement this set of functions yourself.
+If you want to use Gera in an environment without libc, you will need to implement these functions yourself.
 
-This repository is cloned by default by `gerap` when compiling for the C target and no custom implementation is provided.
-
-## Links
-
-- [Gera compiler](https://github.com/typesafeschwalbe/gerac)
-- [Package manager](https://github.com/typesafeschwalbe/gerap)
-- [Standard library](https://github.com/typesafeschwalbe/gerastd)
+This repository is cloned by default by [`gerap`](https://github.com/geralang/gerap) when compiling for the C target and no custom implementation is provided.
 
 ## Expectations by Gera
 
