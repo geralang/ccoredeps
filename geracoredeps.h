@@ -27,11 +27,6 @@ void geracoredeps_display_float(gfloat n, char* buf);
 size_t geracoredeps_display_pointer_length(void* p);
 void geracoredeps_display_pointer(void* p, char* buf);
 
-extern gbool geracoredeps_parse_success;
-
-gint geracoredeps_parse_sint(char* parsed);
-gfloat geracoredeps_parse_float(char* parsed);
-
 
 void geracoredeps_exit(int code);
 

@@ -113,28 +113,6 @@ void geracoredeps_display_pointer(void* p, char* buf) {
     sprintf(buf, "%p", p);
 }
 
-gbool geracoredeps_parse_success = 0;
-
-gint geracoredeps_parse_sint(char* parsed) {
-    setlocale(LC_NUMERIC, "C");
-    size_t length = strlen(parsed);
-    errno = 0;
-    char* end_ptr;
-    gint result = strtoll(parsed, &end_ptr, 10);
-    geracoredeps_parse_success = errno == 0 && end_ptr == parsed + length;
-    return result;
-}
-
-gfloat geracoredeps_parse_float(char* parsed) {
-    setlocale(LC_NUMERIC, "C");
-    size_t length = strlen(parsed);
-    errno = 0;
-    char* end_ptr;
-    gfloat result = strtod(parsed, &end_ptr);
-    geracoredeps_parse_success = errno == 0 && end_ptr == parsed + length;
-    return result;
-}
-
 
 void geracoredeps_exit(int code) {
     exit(code);
