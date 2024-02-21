@@ -23,6 +23,8 @@
     } \
     d_name[s_name.length_bytes] = '\0';
 
+#define GERA_INT_MIN -9223372036854775808
+
 GeraAllocation* gera___rc_alloc(size_t size, GeraFreeHandler fh);
 void gera___rc_incr(GeraAllocation* a);
 void gera___rc_decr(GeraAllocation* a);
