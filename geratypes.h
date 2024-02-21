@@ -40,6 +40,7 @@ typedef struct GeraString {
 
 typedef double gfloat;
 typedef int64_t gint;
+typedef uint64_t guint;
 typedef char gbool;
 
 
