@@ -9,9 +9,11 @@
 #ifdef _WIN32
     #include <windows.h>
     #define GERACORE_MUTEX CRITICAL_SECTION
+    #define GERACORE_THREAD_ID DWORD
 #else
     #include <pthread.h>
     #define GERACORE_MUTEX pthread_mutex_t
+    #define GERACORE_THREAD_ID pthread_t
 #endif
 
 typedef void (*GeraFreeHandler)(char* data, size_t size);

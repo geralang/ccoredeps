@@ -42,6 +42,10 @@ void geracoredeps_free(void* ptr) {
     void geracoredeps_free_mutex(GERACORE_MUTEX* m) {
         DeleteCriticalSection(m);
     }
+
+    GERACORE_THREAD_ID geracoredeps_thread_id() {
+        return GetCurrentThreadId();
+    }
 #else
     GERACORE_MUTEX geracoredeps_create_mutex() {
         GERACORE_MUTEX m;
@@ -67,6 +71,10 @@ void geracoredeps_free(void* ptr) {
         if(pthread_mutex_destroy(m) != 0) {
             gera___panic("Unable to destroy a mutex!");
         }
+    }
+
+    GERACORE_THREAD_ID geracoredeps_thread_id() {
+        return pthread_self();
     }
 #endif
 

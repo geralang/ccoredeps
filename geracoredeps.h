@@ -15,6 +15,8 @@ void geracoredeps_lock_mutex(GERACORE_MUTEX* m);
 void geracoredeps_unlock_mutex(GERACORE_MUTEX* m);
 void geracoredeps_free_mutex(GERACORE_MUTEX* m);
 
+GERACORE_THREAD_ID geracoredeps_thread_id();
+
 
 void geracoredeps_eprint(const char* text);
 
